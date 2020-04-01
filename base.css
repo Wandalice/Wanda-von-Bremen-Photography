@@ -58,3 +58,8 @@ input, textarea, select {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+body {
+    background-size: cover;
+    background-repeat: none;
+}

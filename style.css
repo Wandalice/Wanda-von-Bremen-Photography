@@ -6,6 +6,11 @@ body {
 	
 }
 
+.home-gallery img{
+    opacity: 0;
+    transition: opacity 0s;
+}
+
 
 .img1:hover { 
 opacity: 0.5; }
