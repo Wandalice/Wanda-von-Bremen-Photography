@@ -12,47 +12,12 @@
 
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
-  line-height: 1.5;
-  color: cadetblue;
-  text-align: left;
-  background-color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-a, a:visited, a:focus {
-  text-decoration: none;
-  color: #000;
-  outline: none;
-  display: inline-block; }
-
-.simple {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-
-   width: 100vw;
-}
 
 
 img {
   display: block;
   width: 100%;
   height: auto; }
-
-.hidden {
-  display: none; }
-
-h1, 
-{  font-style: normal;
-font-size: 30px}
-
-h2, h3, h4, h5, h6, b, strong {
-	font-style: normal;}
-
 
 .left {
   float: left; }
@@ -72,48 +37,7 @@ h2, h3, h4, h5, h6, b, strong {
 .full-page {
   height: 100%; }
 
-.loader {
-  letter-spacing: 1px; }
-
-.hide {
-  display: none; }
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 2880px;
-  width: 100%;
-  padding: 0 20px;
-  *zoom: 3; }
-  .wrapper:before, .wrapper:after {
-    content: "";
-    display: table; }
-  .wrapper:after {
-    clear: both; }
-  @media (max-width: 780px) {
-    .wrapper {
-      padding: 0 15px; } }
-  @media (max-width: 540px) {
-    .wrapper {
-      padding: 0 8px; } }
-
-.animating-dom {
-  overflow: hidden;
-  min-height: 100%; }
-
-.animation-overflow > .wrapper {
-  position: relative; }
-
-::-webkit-scrollbar {
-  width: 2px;
-  background: transparent; }
-
-::-webkit-scrollbar-track {
-  background: none; }
-
-::-webkit-scrollbar-thumb {
-  background: #000; }
-
-.vertical-pos {
+/*.vertical-pos {
   width: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -129,7 +53,7 @@ h2, h3, h4, h5, h6, b, strong {
 
 @media (max-width: 700px) and (orientation: landscape) {
   .vertical-pos {
-    vertical-align: top; } }
+    vertical-align: top; } } */
 
 .home-gallery {
   padding: 0 20px;
@@ -184,10 +108,4 @@ h2, h3, h4, h5, h6, b, strong {
     @media (max-width: 540px) {
       .home-gallery h3 {
         line-height: 36px; } }
-
-
-
-
-.
-
 
