@@ -87,16 +87,16 @@ nav a:hover {
 
 .title {
 
-	font-size: 28px;
+	font-size: 35px;
 	font-family: 'Inconsolata', monospace;
 font-weight: 400;
-width: 600px;
+width: 400px;
 	text-decoration: none;
 	color: black;
 	height: 100px;
 	background-color: white;
-	left: 0;
-	top: 0;
+	left: 30px;
+	top: 30px;
 	padding: 60px;
 }
 .text {
@@ -197,16 +197,14 @@ font-size: 18px;
 	padding-bottom: 60px;
 }
 .spacetop {
-	padding-top: 60px;
-}
+	padding-top: 60px;}
 .spacetop1 {
 	padding-top: 90px; }
 
 h3 { 
 	font-family: 'Inconsolata', monospace;
 	font-size: 24px;
-	color: #2e6176;
-}
+	color: #2e6176; }
 
 h2 { 
 	font-size: 15px;
