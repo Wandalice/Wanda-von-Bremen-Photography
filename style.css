@@ -3,7 +3,7 @@ body {
 	font-family: 'Inconsolata', monospace;
 	background-color: #ffffff;
 	color: #000000;
-	
+
 }
 
 .home-gallery img{
@@ -12,12 +12,12 @@ body {
 }
 
 
-.img1:hover { 
+.img1:hover {
 opacity: 0.5; }
 
 
 div.hamburger {
-  
+
 position:fixed;
   top: 50px;
   right: 40px;
@@ -56,8 +56,8 @@ nav {
 
 .small {
 		font-size: 14px;
-	line-height: 1.2;	
-	
+	line-height: 1.2;
+
 }
 
 nav a {
@@ -67,7 +67,7 @@ nav a {
   margin: 10px 0;
 	font-family: 'Inconsolata', monospace;
 	font-size: 19px;
-	
+
 }
 
 section {
@@ -82,7 +82,7 @@ nav a:hover {
   color: white;
 	font-family: 'Inconsolata', monospace;
 	font-size: 19px;
-	
+
 }
 
 .title {
@@ -100,13 +100,13 @@ width: 400px;
 	padding: 60px;
 }
 .text {
-	
+
 	font-size: 14px;
 	width: 300px;
 	left: 20px;
 	padding: 60px;
 }
-.bio { 
+.bio {
 	padding-top: 100px;
 font-size: 14px;
 	font-weight: 300;
@@ -118,8 +118,8 @@ font-size: 14px;
 font-size: 18px;
 	font-weight: 300;
 	line-height: 120%;
-	
-	
+
+
 }
 
 .col-1 {
@@ -158,7 +158,7 @@ font-size: 18px;
   width: calc(8.3333333333%*9);
 }
 
-.col-10 {
+.col-10  {
   width: calc(8.3333333333%*10);
 }
 
@@ -181,8 +181,8 @@ font-size: 18px;
   margin: 0 0;
   padding: 1em;
 }
-		
-		
+
+
 .footer {
   position: fixed;
   left: 0;
@@ -201,12 +201,27 @@ font-size: 18px;
 .spacetop1 {
 	padding-top: 90px; }
 
-h3 { 
+h3 {
 	font-family: 'Inconsolata', monospace;
 	font-size: 24px;
 	color: #2e6176; }
 
-h2 { 
+h2 {
 	font-size: 15px;
 font-family: 'Inconsolata', monospace;
 color: #2e6176; }
+
+.box {     display: inline-block; 
+	  background: url("./ice2.jpg"); 
+		 width: 1000px; 
+		height: 748px; 
+		position: absolute; 
+		left: 0; 
+		top: 0; 
+		 background-size:cover; }  
+
+	canvas {     background: transparent; 
+		  position: absolute; 
+			 left: 0; 
+			  top: 0; 
+				 transition: opacity 5s; }  
