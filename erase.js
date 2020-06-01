@@ -1,5 +1,5 @@
-var url = '.wanda/xxbird.jpg'
-var url2 = 'wanda./xxleave.jpg'
+var url = './wanda/xxbird.jpg'
+var url2 = './wanda/xxleave.jpg'
 var canvas = document.getElementById('canvas')
 var canvas2 = document.getElementById('canvas2')
 var ctx = canvas.getContext('2d')
