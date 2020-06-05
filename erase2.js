@@ -40,8 +40,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     console.log("pctv", pctVisible)
     if (pctVisible < 50) {
       currentCanvas.style["pointer-events"] = "none"
-
-          currantCanvas.style.opacity = "0"
+      currentCanvas.style.opacity = "0"
     }
 
     if (old) {
