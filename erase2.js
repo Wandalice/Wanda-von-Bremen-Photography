@@ -1,7 +1,9 @@
-var url = './ice1.jpg'
-var url2 = './qualle.jpg'
+var url = './wanda/xxbird.jpg'
+var url2 = './wanda/xxleave.jpg'
+var url3 = './wanda/xxtot.jpg'
 var canvas = document.getElementById('canvas')
 var canvas2 = document.getElementById('canvas2')
+var canvas3 = document.getElementById('canvas3')
 
 // inside: img, ctx
 // outside: canvas, url
@@ -24,6 +26,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 
 const ctx = fillCanvas(canvas, url)
 const ctx2 = fillCanvas(canvas2, url2)
+const ctx2 = fillCanvas(canvas3, url3)
 
 let lock = false
 var old = null;
@@ -52,14 +55,14 @@ canvas.addEventListener('mousemove', function (e){
         }, 10000)
         old = {x: x, y: y};
     }
-    
+
     if(pctErased > 50) {
         lastCtx = currentCtx
         if (old) {
             currentCtx.globalCompositeOperation = 'destination-out';
 
             currentCtx.beginPath();
-            currentCtx.arc(x, y, 40 * Math.random(), 0, Math.PI * Math.random());
+            currentCtx.arc(x, y, 40 (), 0, Math.PI * Math.random());
             currentCtx.fill();
 
             currentCtx.lineWidth = 200 * Math.random();
@@ -88,7 +91,7 @@ canvas.addEventListener('mousemove', function (e){
             currentCtx.stroke();
         }
         old = {x: x, y: y};
-        
+
     }
 
 });
