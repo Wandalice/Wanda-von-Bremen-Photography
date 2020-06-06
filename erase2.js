@@ -42,8 +42,8 @@ const fillCanvas = (currentCanvas, currentUrl) => {
       currentCanvas.style.opacity = "0"
     }
 
-    const currentCtx = pctErased < 50 ? ctx2 : ctx
-      if (currentCtx !== lastCtx){
+    const currentCanvas = pctErased < 50 ? currentCanvas : lastCanvas
+      if (currentCanvas !== lastCanvas){
           lock = true
           setTimeout(() => {
             lock = false
