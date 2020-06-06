@@ -9,6 +9,8 @@ var canvas3 = document.getElementById("canvas3");
 // inside: img, ctx
 // outside: canvas, url
 
+let lock = false // First we set up a global lock that will disable any canvas events during a fadeout
+
 const fillCanvas = (currentCanvas, currentUrl) => {
   const ctx = currentCanvas.getContext("2d");
   const img = new Image();
@@ -37,20 +39,22 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
-    if (pctVisible < 50) {
+    
+    // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
+    // conditional nullifies its condition, it will only ever happen once.
+    if (pctVisible < 50 && currentCanvas.style["pointer-events"] !== "none") {
+      lock = true
       currentCanvas.style["pointer-events"] = "none"
       currentCanvas.style.opacity = "0"
+      
+      // In 2000 millisecond unset the global lock
+      setTimeout(() => {
+        lock = false
+      }, 2000)
     }
 
-    const currentCanvas = pctErased < 50 ? currentCanvas : lastCanvas
-      if (currentCanvas !== lastCanvas){
-          lock = true
-          setTimeout(() => {
-            lock = false
-          }, 10000)
-          old = {x: x, y: y};
-
-    if (old) {
+    // Only do the erasing if the global lock is not set.
+    if (old && !lock) {
       ctx.globalCompositeOperation = "destination-out";
 
       ctx.beginPath();
@@ -70,9 +74,8 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 
     console.log(currentCanvas.id, w, h, area, x, y);
 
-    return ctx;
-    return ctx2;
   });
+  return ctx;
 };
 const ctx = fillCanvas(canvas, url);
 const ctx2 = fillCanvas(canvas2, url2);
