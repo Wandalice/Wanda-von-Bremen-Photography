@@ -37,11 +37,18 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
-    console.log("pctv", pctVisible)
     if (pctVisible < 50) {
       currentCanvas.style["pointer-events"] = "none"
       currentCanvas.style.opacity = "0"
     }
+
+    const currentCtx = pctErased < 50 ? ctx2 : ctx
+      if (currentCtx !== lastCtx){
+          lock = true
+          setTimeout(() => {
+            lock = false
+          }, 10000)
+          old = {x: x, y: y};
 
     if (old) {
       ctx.globalCompositeOperation = "destination-out";
