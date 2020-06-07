@@ -1,4 +1,4 @@
-var url = './wanda/bookweitercheck3.jpg'
+var url = './wanda/xkuh.jpg'
 var url2 = './wanda/bookweitercheck4.jpg'
 var url3 = './wanda/bookweitercheck5.jpg'
 var url4 = './wanda/bookweitercheck6.jpg'
@@ -55,7 +55,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
       // In 2000 millisecond unset the global lock
       setTimeout(() => {
         lock = false
-      }, 3000)
+      }, 2000)
     }
 
     // Only do the erasing if the global lock is not set.

@@ -38,14 +38,23 @@
     width: 100%;
 }
 
+
+
+/* this is added and new, the try to giv eeach container a specific space on the page */
+
 .container-1 {
    top: 20%;
    left: 10%;
 }
 
 .container-2 {
-   top: 70%;
+   top: 1000px;
    left: 40%;
+}
+
+.container-3 {
+   top: 2000px;
+   left: 60%;
 }
 
 .row {
@@ -59,8 +68,10 @@
 	box-sizing: border-box;
 	margin: 0 0;
 	padding: 1em;
+}
 
-/*  if doesnt work delete from here on */
+
+
 .col-1 {
 	width: calc(8.3333333333%*1);
 }
