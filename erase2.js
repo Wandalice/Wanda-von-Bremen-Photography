@@ -1,13 +1,13 @@
 var url = './wanda/bookweitercheck3.jpg'
 var url2 = './wanda/bookweitercheck4.jpg'
 var url3 = './wanda/bookweitercheck5.jpg'
-var url4 = './wanda/bookweitercheck6.jpg'
+
 
 
 var canvas = document.getElementById("canvas");
 var canvas2 = document.getElementById("canvas2");
 var canvas3 = document.getElementById("canvas3");
-var canvas4 = document.getElementById("canvas4");
+
 
 // inside: img, ctx
 // outside: canvas, url
@@ -83,4 +83,3 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 const ctx = fillCanvas(canvas, url);
 const ctx2 = fillCanvas(canvas2, url2);
 const ctx3 = fillCanvas(canvas3, url3);
-const ctx4 = fillCanvas(canvas3, url4);
