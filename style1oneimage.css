@@ -37,3 +37,74 @@
     /* This makes the image the full-width of its frame. The height is auto from aspect ratio */
     width: 100%;
 }
+
+.container-1 {
+   top: 20%;
+   left: 10%;
+}
+
+.container-2 {
+   top: 70%;
+   left: 40%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.row [class*="col-"] {
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 1em;
+
+/*  if doesnt work delete from here on */
+.col-1 {
+	width: calc(8.3333333333%*1);
+}
+
+.col-2 {
+	width: calc(8.3333333333%*2);
+}
+
+.col-3 {
+	width: calc(8.3333333333%*3);
+}
+
+.col-4 {
+	width: calc(8.3333333333%*4);
+}
+
+.col-5 {
+	width: calc(8.3333333333%*5);
+}
+
+.col-6 {
+	width: calc(8.3333333333%*6);
+}
+
+.col-7 {
+	width: calc(8.3333333333%*7);
+}
+
+.col-8 {
+	width: calc(8.3333333333%*8);
+}
+
+.col-9 {
+	width: calc(8.3333333333%*9);
+}
+
+.col-10 {
+	width: calc(8.3333333333%*10);
+}
+
+.col-11 {
+	width: calc(8.3333333333%*11);
+}
+
+.col-12 {
+	width: calc(8.3333333333%*12);
+}
