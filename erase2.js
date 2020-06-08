@@ -21,7 +21,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
   const img = new Image();
   img.src = currentUrl;
   img.onload = function() {
-    var width = Math.min(400, img.width);
+    var width = Math.min(900, img.width);
     var height = img.height * (width / img.width);
 
     currentCanvas.width = width;
@@ -85,5 +85,5 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 const ctx = fillCanvas(canvas, url);
 const ctx2 = fillCanvas(canvas2, url2);
 const ctx3 = fillCanvas(canvas3, url3);
-const ctx4 = fillCanvas(canvas3, url4);
-const ctx5 = fillCanvas(canvas3, url5);
+const ctx4 = fillCanvas(canvas4, url4);
+const ctx5 = fillCanvas(canvas5, url5);
