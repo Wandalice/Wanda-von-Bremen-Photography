@@ -55,7 +55,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
       // In 2000 millisecond unset the global lock
       setTimeout(() => {
         lock = false
-      }, 2000)
+      }, 3000)
     }
 
     // Only do the erasing if the global lock is not set.
@@ -87,3 +87,4 @@ const ctx2 = fillCanvas(canvas2, url2);
 const ctx3 = fillCanvas(canvas3, url3);
 const ctx4 = fillCanvas(canvas4, url4);
 const ctx5 = fillCanvas(canvas5, url5);
+const ctx6 = fillCanvas(canvas6, url6);
