@@ -1,9 +1,10 @@
-var url = './wanda/xkuh.jpg'
+var url = './wanda/bookweitercheck3.jpg'
 var url2 = './wanda/bookweitercheck4.jpg'
 var url3 = './wanda/bookweitercheck5.jpg'
 var url4 = './wanda/bookweitercheck6.jpg'
-var url5 = './wanda/bügeleisen.jpg'
+var url5 = './wanda/bookweitercheck7.jpg'
 var url6 = './wanda/bookweitercheck8.jpg'
+var url7 = './wanda/bookweitercheck9.jpg'
 
 var canvas = document.getElementById("canvas");
 var canvas2 = document.getElementById("canvas2");
@@ -11,6 +12,7 @@ var canvas3 = document.getElementById("canvas3");
 var canvas4 = document.getElementById("canvas4");
 var canvas5 = document.getElementById("canvas5");
 var canvas6 = document.getElementById("canvas6");
+var canvas7 = document.getElementById("canvas7");
 // inside: img, ctx
 // outside: canvas, url
 
@@ -21,7 +23,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
   const img = new Image();
   img.src = currentUrl;
   img.onload = function() {
-    var width = Math.min(900, img.width);
+    var width = Math.min(1200, img.width);
     var height = img.height * (width / img.width);
 
     currentCanvas.width = width;
@@ -88,3 +90,4 @@ const ctx3 = fillCanvas(canvas3, url3);
 const ctx4 = fillCanvas(canvas4, url4);
 const ctx5 = fillCanvas(canvas5, url5);
 const ctx6 = fillCanvas(canvas6, url6);
+const ctx7 = fillCanvas(canvas7, url7);
