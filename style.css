@@ -233,3 +233,12 @@ div.neben {
     left: 10%;
     transition: opacity 3s;
 }
+
+div.bookbox {
+	position: absolute;
+  left: 10%;
+  top: 1500px;
+	font-size: 15px;
+	color: #2e6176;
+
+	}
