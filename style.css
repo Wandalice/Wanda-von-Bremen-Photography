@@ -230,15 +230,16 @@ div.neben {
   canvas {
     position: absolute;
     top: 250px;
-    left: 10%;
+    left: 30px;
     transition: opacity 3s;
 }
 
 div.bookbox {
 	position: absolute;
-  left: 10%;
-  top: 1500px;
+  left: 30px;
+  top: 2000px;
 	font-size: 15px;
 	color: #2e6176;
+	font-family: 'Inconsolata', monospace;
 
 	}

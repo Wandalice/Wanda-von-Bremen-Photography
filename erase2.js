@@ -42,14 +42,14 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 
     let ct = 0
     for (var i = 3, len = data.length; i < len; i += 4) {
-      if (data[i] > 60) ct++;
+      if (data[i] > 40) ct++;
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
 
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
     // conditional nullifies its condition, it will only ever happen once.
-    if (pctVisible < 60 && currentCanvas.style["pointer-events"] !== "none") {
+    if (pctVisible < 40 && currentCanvas.style["pointer-events"] !== "none") {
       lock = true
       currentCanvas.style["pointer-events"] = "none"
       currentCanvas.style.opacity = "0"
@@ -65,7 +65,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
       ctx.globalCompositeOperation = "destination-out";
 
       ctx.beginPath();
-      ctx.arc(x, y, 40 * Math.random(), 0, Math.PI * Math.random());
+      ctx.arc(x, y, 50 * Math.random(), 0, Math.PI * Math.random());
       ctx.fill();
 
       ctx.lineWidth = 70;
