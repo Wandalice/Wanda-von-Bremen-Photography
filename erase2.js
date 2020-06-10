@@ -46,14 +46,14 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 
     let ct = 0
     for (var i = 3, len = data.length; i < len; i += 4) {
-      if (data[i] > 40) ct++;
+      if (data[i] > 45) ct++;
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
 
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
     // conditional nullifies its condition, it will only ever happen once.
-    if (pctVisible < 40 && currentCanvas.style["pointer-events"] !== "none") {
+    if (pctVisible < 45 && currentCanvas.style["pointer-events"] !== "none") {
       lock = true
       currentCanvas.style["pointer-events"] = "none"
       currentCanvas.style.opacity = "0"
