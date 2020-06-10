@@ -5,6 +5,8 @@ var url4 = './wanda/bookweitercheck6.jpg'
 var url5 = './wanda/bookweitercheck7.jpg'
 var url6 = './wanda/bookweitercheck8.jpg'
 var url7 = './wanda/bookweitercheck9.jpg'
+var url8 = './wanda/bookweiter06web2.jpg'
+var url9 = './wanda/bookweiter06web.jpg'
 
 var canvas = document.getElementById("canvas");
 var canvas2 = document.getElementById("canvas2");
@@ -13,6 +15,8 @@ var canvas4 = document.getElementById("canvas4");
 var canvas5 = document.getElementById("canvas5");
 var canvas6 = document.getElementById("canvas6");
 var canvas7 = document.getElementById("canvas7");
+var canvas8 = document.getElementById("canvas8");
+var canvas9 = document.getElementById("canvas9");
 // inside: img, ctx
 // outside: canvas, url
 
@@ -91,3 +95,5 @@ const ctx4 = fillCanvas(canvas4, url4);
 const ctx5 = fillCanvas(canvas5, url5);
 const ctx6 = fillCanvas(canvas6, url6);
 const ctx7 = fillCanvas(canvas7, url7);
+const ctx8 = fillCanvas(canvas8, url8);
+const ctx9 = fillCanvas(canvas9, url9);
