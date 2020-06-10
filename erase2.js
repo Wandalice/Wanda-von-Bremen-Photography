@@ -68,7 +68,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
       ctx.arc(x, y, 50 * Math.random(), 0, Math.PI * Math.random());
       ctx.fill();
 
-      ctx.lineWidth = 70;
+      ctx.lineWidth = 90;
       ctx.beginPath();
       ctx.moveTo(old.x, old.y);
       ctx.lineTo(x, y);
