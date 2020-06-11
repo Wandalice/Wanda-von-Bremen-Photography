@@ -85,18 +85,18 @@ nav a:hover {
 	width: 400px;
 	text-decoration: none;
 	color: black;
-	height: 100px;
+	height: 70px;
 	background-color: white;
 	left: 30px;
-	top: 30px;
 	padding: 60px;
 }
 
 .untertitle {
-font-size: 28px;
+font-size: 26.5px;
 font-family: 'Inconsolata', monospace;
 	font-weight: 200;
 	color: black;
+margin-bottom: 30px;
 
 }
 .text {
