@@ -92,6 +92,13 @@ nav a:hover {
 	padding: 60px;
 }
 
+.untertitle {
+font-size: 30px;
+font-family: 'Inconsolata', monospace;
+	font-weight: 200;
+	color: black;
+	
+}
 .text {
 	font-size: 14px;
 	width: 300px;
