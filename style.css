@@ -96,6 +96,7 @@ font-size: 26.5px;
 font-family: 'Inconsolata', monospace;
 	font-weight: 200;
 	color: black;
+	padding-bottom: 10px;
 
 }
 .text {
@@ -188,6 +189,7 @@ font-family: 'Inconsolata', monospace;
 	background-color: white;
 	color: black;
 	text-align: center;
+	padding-top: 10px;
 
 }
 
