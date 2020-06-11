@@ -92,11 +92,11 @@ nav a:hover {
 }
 
 .untertitle {
-font-size: 26.5px;
+font-size: 26px;
 font-family: 'Inconsolata', monospace;
-	font-weight: 200;
-	color: blue;
-	padding-bottom: 10px;
+font-weight: 200;
+color: blue;
+padding-bottom: 10px;
 
 }
 .text {
@@ -187,10 +187,10 @@ font-family: 'Inconsolata', monospace;
 	bottom: 0px;
 	width: 100%;
 	background-color: white;
-	color: black;
+	color: grey;
 	text-align: center;
 	padding-top: 10px;
-		font-size: 10px;
+		font-size: 8px;
 
 }
 
