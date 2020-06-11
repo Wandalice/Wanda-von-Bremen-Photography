@@ -95,7 +95,7 @@ nav a:hover {
 font-size: 26.5px;
 font-family: 'Inconsolata', monospace;
 	font-weight: 200;
-	color: black;
+	color: blue;
 	padding-bottom: 10px;
 
 }
@@ -190,6 +190,7 @@ font-family: 'Inconsolata', monospace;
 	color: black;
 	text-align: center;
 	padding-top: 10px;
+		font-size: 10px;
 
 }
 
