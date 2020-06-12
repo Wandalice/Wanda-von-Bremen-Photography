@@ -53,7 +53,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     let targetPct = 50
 
     if (currentCanvas===canvas9 || currentCanvas===canvas8) {
-      targetPct = 90
+      targetPct = 10
     }
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
     // conditional nullifies its condition, it will only ever happen once.
