@@ -82,7 +82,7 @@ nav a:hover {
 	font-size: 35px;
 	font-family: 'Inconsolata', monospace;
 	font-weight: 400;
-	width: 400px;
+	width: 405px;
 	text-decoration: none;
 	color: black;
 	height: 70px;
@@ -97,6 +97,7 @@ font-family: 'Inconsolata', monospace;
 font-weight: 200;
 color: black;
 padding-bottom: 10px;
+
 
 }
 .text {
