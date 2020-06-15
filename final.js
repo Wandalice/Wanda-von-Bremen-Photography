@@ -40,6 +40,12 @@ const handleMouseMove = (event) => {
     })
 }
 
+document.querySelector("div.hamburger").addEventListener("click",opendrawer)
+const opendrawer = (event) => {
+document.querySelector("div.slideout").style.right="0px"
+}
+
+
 handleMouseMove()
 
 window.addEventListener("mousemove", handleMouseMove)
