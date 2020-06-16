@@ -242,6 +242,7 @@ div.neben {
     position: absolute;
     top: 200px;
     left: 70px;
+		right: 70px;
     transition: opacity 3s;
 }
 
