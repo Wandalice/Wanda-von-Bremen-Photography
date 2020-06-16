@@ -50,10 +50,10 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
-    let targetPct = 50
+    let targetPct = 10
 
     if (currentCanvas===canvas9 || currentCanvas===canvas8) {
-      targetPct = 5
+      targetPct = 50
     }
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
     // conditional nullifies its condition, it will only ever happen once.
@@ -73,7 +73,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
       ctx.globalCompositeOperation = "destination-out";
 
       ctx.beginPath();
-      ctx.arc(x, y, 50 * Math.random(), 0, Math.PI * Math.random());
+      ctx.arc(x, y, 10 * Math.random(), 0, Math.PI * Math.random());
       ctx.fill();
 
       ctx.lineWidth = 120;
