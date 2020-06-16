@@ -46,11 +46,11 @@ const fillCanvas = (currentCanvas, currentUrl) => {
 
     let ct = 0
     for (var i = 3, len = data.length; i < len; i += 4) {
-      if (data[i] > 10) ct++;
+      if (data[i] > 90) ct++;
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
-    let targetPct = 10
+    let targetPct = 90
 
     if (currentCanvas===canvas9 || currentCanvas===canvas8) {
       targetPct = 50
