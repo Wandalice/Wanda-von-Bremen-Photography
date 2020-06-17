@@ -243,7 +243,7 @@ div.neben {
     top: 200px;
     left: 70px;
 		right: 70px;
-    transition: opacity 3s;
+    transition: opacity 2s;
 }
 
 div.bookbox {
@@ -255,3 +255,12 @@ div.bookbox {
 	font-family: 'Inconsolata', monospace;
 
 	}
+
+	@media only screen and (max-width: 800px) {
+  .only-small {
+  	<a href="handy.html">smartphone</a>
+  }
+  .only-big {
+    display: none;
+  }
+}
