@@ -1,6 +1,6 @@
 @import url("style.css");
 body {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Nunito Sans', sans-serif;
 	background-color: #ffffff;
 	color: #000000;
 }
@@ -119,6 +119,10 @@ padding-bottom: 10px;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 120%;
+}
+.bold {
+	font-size: 24px;
+	font-weight: 800;
 }
 
 .col-1 {
