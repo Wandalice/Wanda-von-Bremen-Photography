@@ -272,9 +272,37 @@ div.bookbox {
   top: 1000px;
 	font-size: 15px;
 	color: #2e6176;
-	font-family: 'Inconsolata', monospace;
 
 	}
+
+	.pdf {
+		position: relative;
+		width: 20%;
+		top: 1000px;
+    left: 800px;
+		right: 50px;
+
+	}
+
+	.pdf1:hover {
+		opacity: 0.5;
+		width: 60%;
+}
+.video-responsive{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+top: 800px;
+left: 60px;
+}
+.video-responsive iframe{
+left:0px;
+top:0px;
+height:50%;
+width:50%;
+position:absolute;
+}
 .mobile {
 	display: none
 }

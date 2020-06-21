@@ -12,7 +12,6 @@ body{
 
 .masonry-brick {
   flex: auto;
-  height: 250px;
   min-width: 150px;
   margin: 0 8px 8px 0; /* Some gutter */
 }
@@ -28,7 +27,6 @@ body{
 .image{
     margin: 20px;
     flex: 1 1 calc(50% - 40px);
-    height: 25vw;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
