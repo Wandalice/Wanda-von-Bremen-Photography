@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+
+.masonry {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.masonry-brick {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 8px 8px 0; /* Some gutter */
+}
+
+
+
+/* here starts the lighhtbox code */
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    margin: 20px;
+    flex: 1 1 calc(50% - 40px);
+    height: 25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.scrim{
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.big-image{
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.left-arrow{
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 50px);
+    padding: 50px;
+    cursor: pointer;
+    font-size: 28px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.right-arrow{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 50px);
+    padding: 50px;
+    cursor: pointer;
+    font-size: 28px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
