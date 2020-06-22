@@ -130,8 +130,21 @@ letter-spacing: 17px
 	font-weight: 500;
 }
 .logo {
-		width: 60px;
+	display: flex;
+	margin-right: 280px;
+
 }
+
+.logo1 {
+  flex-grow: 1;
+  height: 200px;
+}
+
+.logo1 + .logo1 {
+  margin-left: 25%;
+
+}
+
 .center {
 	font-size: 21px;
 	font-weight: 200;
