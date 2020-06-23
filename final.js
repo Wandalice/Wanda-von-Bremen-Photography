@@ -1,24 +1,24 @@
 const handleMouseMove = (event) => {
     const windowWidth = window.innerWidth
     const pageX = event ? event.pageX : 0
-    console.log("WINDOW WIDTH", windowWidth)
-    console.log("MOUSE X", pageX)
+    // console.log("WINDOW WIDTH", windowWidth)
+    // console.log("MOUSE X", pageX)
     const percentageX = pageX / windowWidth
-    console.log("PERCENTAGE X", percentageX)
+  //   console.log("PERCENTAGE X", percentageX)
 
     const columnOneImages = Array.from(document.querySelectorAll(".column-1 img"))
     const columnTwoImages = Array.from(document.querySelectorAll(".column-2 img"))
-    console.log("Column One Images", columnOneImages)
-    console.log("Column Two Images", columnTwoImages)
+  //  console.log("Column One Images", columnOneImages)
+  //   console.log("Column Two Images", columnTwoImages)
     const numberOfColumnOneImages = columnOneImages.length
     const numberOfColumnTwoImages = columnTwoImages.length
-    console.log("#1", numberOfColumnOneImages)
-    console.log("#2", numberOfColumnTwoImages)
+  //   console.log("#1", numberOfColumnOneImages)
+  //   console.log("#2", numberOfColumnTwoImages)
 
     const leftImageToShow = Math.floor(percentageX * numberOfColumnOneImages)
     const rightImageToShow = Math.floor(percentageX * numberOfColumnTwoImages)
-    console.log("LEFT IMAGE", leftImageToShow)
-    console.log("RIGHT IMAGE", rightImageToShow)
+    // console.log("LEFT IMAGE", leftImageToShow)
+  //   console.log("RIGHT IMAGE", rightImageToShow)
 
     columnOneImages.map((currentImage, index) => {
         if (index === leftImageToShow) {

@@ -1,24 +1,8 @@
-
-.masonry-brick:nth-child(4n+1) {
-  width: 250px;
-}
-.masonry-brick:nth-child(4n+1):nth-child(4n+2) {
-  width: 325px;
-}
-.masonry-brick:nth-child(4n+1):nth-child(4n+3) {
-  width: 180px;
-}
-.masonry-brick:nth-child(4n+1):nth-child(4n+4) {
-  width: 380px;
-}
-
-
-
-
 /* here starts the lighhtbox code */
 
 
-const images = Array.from(document.querySelectorAll(".image")).map(image => image.dataset.src)
+const images = Array.from(document.querySelectorAll("img")).map(image => image.src)
+console.log(images)
 window.currentImage = 0
 const switchBigImage = () => {
     const url = images[window.currentImage]
@@ -31,8 +15,7 @@ const hideBigImage = () => {
     document.querySelector(".scrim").style.display = "none"
 }
 
-document.querySelectorAll(".image").forEach((image, index) => {
-    image.style["background-image"] = `url(${image.dataset.src})`
+document.querySelectorAll("img").forEach((image, index) => {
     image.addEventListener("click", () => {
         window.currentImage = index
         switchBigImage()

@@ -267,12 +267,12 @@ h2 {
 .links{
 	margin-left: 40px;
 }
-}
+
 
 div.neben {
-  position: absolute;
-  left: 100px;
-  top: 1500px;
+	height: 830px;
+
+
 }
 
   canvas {
@@ -284,26 +284,27 @@ div.neben {
 }
 
 div.bookbox {
-	position: absolute;
-  left: 70px;
-	margin-right: 80px;
-  top: 1050px;
 	font-size: 18px;
 	color: black;
+	padding: 0 20px;
 
+	}
+	div.rowsame{
+		display:flex;
 	}
 
 	.pdf {
 		z-index: 10;
 		position: relative;
 		width: 10%;
-		top: 1080px;
     left: 70%;
+		flex-basis: 20%;
+		margin-top: 100px;
 
 
 	}
 .pdf1{
-	width: 100%
+	width: 50%
 }
 	.pdf1:hover {
 		opacity: 0.5;
@@ -314,8 +315,7 @@ overflow:hidden;
 padding-bottom:56.25%;
 position:relative;
 height:0;
-top: 850px;
-left: 60px;
+flex-basis: 80%;
 }
 .video-responsive iframe{
 left:0px;
