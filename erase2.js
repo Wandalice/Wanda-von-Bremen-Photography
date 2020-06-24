@@ -81,7 +81,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     const pctVisible = ((100 * ct) / area).toFixed(2);
     let targetPct = 90
 
-    if (currentCanvas===canvas9 || currentCanvas===canvas8) {
+    if (currentCanvas===canvas || currentCanvas===canvas2) {
       targetPct = 50
     }
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
