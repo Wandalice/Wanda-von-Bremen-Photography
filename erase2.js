@@ -1,12 +1,29 @@
-var url = './wanda/bookweitercheck3.jpg'
-var url2 = './wanda/bookweitercheck4.jpg'
-var url3 = './wanda/bookweitercheck5.jpg'
-var url4 = './wanda/bookweitercheck6.jpg'
-var url5 = './wanda/bookweitercheck7.jpg'
-var url6 = './wanda/bookweitercheck8.jpg'
-var url7 = './wanda/bookweitercheck9.jpg'
-var url8 = './wanda/bookweiter06web2.jpg'
-var url9 = './wanda/bookweiter06web.jpg'
+var url = './book/canvas.jpg'
+var url2 = './book/canvas1.jpg'
+var url3 = './book/canvas2.jpg'
+var url4 = './book/canvas3.jpg'
+var url5 = './book/canvas4.jpg'
+var url6 = './book/canvas5.jpg'
+var url7 = './book/canvas6.jpg'
+var url8 = './book/canvas7.jpg'
+var url9 = './book/canvas8.jpg'
+var url10 = './book/canvas9.jpg'
+var url11 = './book/canvas10.jpg'
+var url12 = './book/canvas11.jpg'
+var url13 = './book/canvas12.jpg'
+var url14 = './book/canvas13.jpg'
+var url15 = './book/canvas14.jpg'
+var url16 = './book/canvas15.jpg'
+var url17 = './book/canvas16.jpg'
+var url18 = './book/canvas17.jpg'
+var url19 = './book/canvas18.jpg'
+var url20 = './book/canvas19.jpg'
+var url21 = './book/canvas20.jpg'
+
+
+
+
+
 
 var canvas = document.getElementById("canvas");
 var canvas2 = document.getElementById("canvas2");
@@ -17,6 +34,18 @@ var canvas6 = document.getElementById("canvas6");
 var canvas7 = document.getElementById("canvas7");
 var canvas8 = document.getElementById("canvas8");
 var canvas9 = document.getElementById("canvas9");
+var canvas10 = document.getElementById("canvas10");
+var canvas11 = document.getElementById("canvas11");
+var canvas12 = document.getElementById("canvas12");
+var canvas13 = document.getElementById("canvas13");
+var canvas14 = document.getElementById("canvas14");
+var canvas15 = document.getElementById("canvas15");
+var canvas16 = document.getElementById("canvas16");
+var canvas17 = document.getElementById("canvas17");
+var canvas18 = document.getElementById("canvas18");
+var canvas19 = document.getElementById("canvas19");
+var canvas20 = document.getElementById("canvas20");
+var canvas21 = document.getElementById("canvas21");
 // inside: img, ctx
 // outside: canvas, url
 
@@ -101,3 +130,15 @@ const ctx6 = fillCanvas(canvas6, url6);
 const ctx7 = fillCanvas(canvas7, url7);
 const ctx8 = fillCanvas(canvas8, url8);
 const ctx9 = fillCanvas(canvas9, url9);
+const ctx10 = fillCanvas(canvas10, url10);
+const ctx11 = fillCanvas(canvas11, url11);
+const ctx12 = fillCanvas(canvas12, url12);
+const ctx13 = fillCanvas(canvas13, url13);
+const ctx14 = fillCanvas(canvas14, url14);
+const ctx15 = fillCanvas(canvas15, url15);
+const ctx16 = fillCanvas(canvas16, url16);
+const ctx17 = fillCanvas(canvas17, url17);
+const ctx18 = fillCanvas(canvas18, url18);
+const ctx19 = fillCanvas(canvas19, url19);
+const ctx20 = fillCanvas(canvas20, url20);
+const ctx21 = fillCanvas(canvas21, url21);
