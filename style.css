@@ -316,7 +316,9 @@ overflow:hidden;
 padding-bottom:56.25%;
 position:relative;
 height:0;
-flex-basis: 80%;
+flex-basis: 100%;
+margin-left: 20px;
+display: flex;
 }
 .video-responsive iframe{
 left:0px;
