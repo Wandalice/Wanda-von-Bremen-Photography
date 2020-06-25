@@ -1,6 +1,6 @@
 var url = './book/canvas.jpg'
 var url2 = './book/canvas1.jpg'
-var url3 = './book/canvas2.jpg'
+var url3 = './book/canvas_2.jpg'
 var url4 = './book/canvas3.jpg'
 var url5 = './book/canvas4.jpg'
 var url6 = './book/canvas5.jpg'
