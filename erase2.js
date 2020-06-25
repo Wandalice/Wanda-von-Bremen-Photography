@@ -1,5 +1,4 @@
-var url = './book/canvas.jpg'
-var url2 = './book/canvas1.jpg'
+var url = './book/start.jpg'
 var url3 = './book/canvas_2.jpg'
 var url4 = './book/canvas3.jpg'
 var url5 = './book/canvas4.jpg'
@@ -41,7 +40,6 @@ var url36 = './book/canvas35.jpg'
 
 
 var canvas = document.getElementById("canvas");
-var canvas2 = document.getElementById("canvas2");
 var canvas3 = document.getElementById("canvas3");
 var canvas4 = document.getElementById("canvas4");
 var canvas5 = document.getElementById("canvas5");
@@ -112,7 +110,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     const pctVisible = ((100 * ct) / area).toFixed(2);
     let targetPct = 90
 
-    if (currentCanvas===canvas || currentCanvas===canvas2 || currentCanvas===canvas3) {
+    if (currentCanvas===canvas || currentCanvas===canvas3) {
       targetPct = 50
     }
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
@@ -153,7 +151,6 @@ const fillCanvas = (currentCanvas, currentUrl) => {
   return ctx;
 };
 const ctx = fillCanvas(canvas, url);
-const ctx2 = fillCanvas(canvas2, url2);
 const ctx3 = fillCanvas(canvas3, url3);
 const ctx4 = fillCanvas(canvas4, url4);
 const ctx5 = fillCanvas(canvas5, url5);
