@@ -19,6 +19,15 @@ var url18 = './book/canvas17.jpg'
 var url19 = './book/canvas18.jpg'
 var url20 = './book/canvas19.jpg'
 var url21 = './book/canvas20.jpg'
+var url22 = './book/canvas21.jpg'
+var url23 = './book/canvas22.jpg'
+var url24 = './book/canvas23.jpg'
+var url25 = './book/canvas24.jpg'
+var url26 = './book/canvas25.jpg'
+var url27 = './book/canvas26.jpg'
+var url28 = './book/canvas27.jpg'
+var url29 = './book/canvas28.jpg'
+var url30 = './book/canvas29.jpg'
 
 
 
@@ -46,6 +55,16 @@ var canvas18 = document.getElementById("canvas18");
 var canvas19 = document.getElementById("canvas19");
 var canvas20 = document.getElementById("canvas20");
 var canvas21 = document.getElementById("canvas21");
+var canvas22 = document.getElementById("canvas22");
+var canvas23 = document.getElementById("canvas23");
+var canvas24 = document.getElementById("canvas24");
+var canvas25 = document.getElementById("canvas25");
+var canvas26 = document.getElementById("canvas26");
+var canvas27 = document.getElementById("canvas27");
+var canvas28 = document.getElementById("canvas28");
+var canvas29 = document.getElementById("canvas29");
+var canvas30 = document.getElementById("canvas30");
+
 // inside: img, ctx
 // outside: canvas, url
 
@@ -142,3 +161,12 @@ const ctx18 = fillCanvas(canvas18, url18);
 const ctx19 = fillCanvas(canvas19, url19);
 const ctx20 = fillCanvas(canvas20, url20);
 const ctx21 = fillCanvas(canvas21, url21);
+const ctx22 = fillCanvas(canvas22, url22);
+const ctx23 = fillCanvas(canvas23, url23);
+const ctx24 = fillCanvas(canvas24, url24);
+const ctx25 = fillCanvas(canvas25, url25);
+const ctx26 = fillCanvas(canvas25, url26);
+const ctx27 = fillCanvas(canvas25, url27);
+const ctx28 = fillCanvas(canvas25, url28);
+const ctx29 = fillCanvas(canvas25, url29);
+const ctx30 = fillCanvas(canvas25, url30);
