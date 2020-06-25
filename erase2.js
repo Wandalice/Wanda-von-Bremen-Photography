@@ -75,6 +75,7 @@ var canvas32 = document.getElementById("canvas32");
 var canvas33 = document.getElementById("canvas33");
 var canvas34 = document.getElementById("canvas34");
 var canvas35 = document.getElementById("canvas35");
+var canvas36 = document.getElementById("canvas36");
 
 // inside: img, ctx
 // outside: canvas, url
@@ -186,3 +187,4 @@ const ctx32 = fillCanvas(canvas32, url32);
 const ctx33 = fillCanvas(canvas33, url33);
 const ctx34 = fillCanvas(canvas34, url34);
 const ctx35 = fillCanvas(canvas35, url35);
+const ctx36 = fillCanvas(canvas36, url36);
