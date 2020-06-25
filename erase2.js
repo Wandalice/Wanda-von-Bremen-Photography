@@ -28,6 +28,12 @@ var url27 = './book/canvas26.jpg'
 var url28 = './book/canvas27.jpg'
 var url29 = './book/canvas28.jpg'
 var url30 = './book/canvas29.jpg'
+var url31 = './book/canvas30.jpg'
+var url32 = './book/canvas31.jpg'
+var url33 = './book/canvas32.jpg'
+var url34 = './book/canvas33.jpg'
+var url35 = './book/canvas34.jpg'
+var url36 = './book/canvas35.jpg'
 
 
 
@@ -64,6 +70,11 @@ var canvas27 = document.getElementById("canvas27");
 var canvas28 = document.getElementById("canvas28");
 var canvas29 = document.getElementById("canvas29");
 var canvas30 = document.getElementById("canvas30");
+var canvas31 = document.getElementById("canvas31");
+var canvas32 = document.getElementById("canvas32");
+var canvas33 = document.getElementById("canvas33");
+var canvas34 = document.getElementById("canvas34");
+var canvas35 = document.getElementById("canvas35");
 
 // inside: img, ctx
 // outside: canvas, url
@@ -100,7 +111,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     const pctVisible = ((100 * ct) / area).toFixed(2);
     let targetPct = 90
 
-    if (currentCanvas===canvas || currentCanvas===canvas2) {
+    if (currentCanvas===canvas || currentCanvas===canvas2 || currentCanvas===canvas3) {
       targetPct = 50
     }
     // If this is newly erased (it hasn't been hidden yet) set the global lock. Since the effect of this
@@ -165,8 +176,13 @@ const ctx22 = fillCanvas(canvas22, url22);
 const ctx23 = fillCanvas(canvas23, url23);
 const ctx24 = fillCanvas(canvas24, url24);
 const ctx25 = fillCanvas(canvas25, url25);
-const ctx26 = fillCanvas(canvas25, url26);
-const ctx27 = fillCanvas(canvas25, url27);
-const ctx28 = fillCanvas(canvas25, url28);
-const ctx29 = fillCanvas(canvas25, url29);
-const ctx30 = fillCanvas(canvas25, url30);
+const ctx26 = fillCanvas(canvas26, url26);
+const ctx27 = fillCanvas(canvas27, url27);
+const ctx28 = fillCanvas(canvas28, url28);
+const ctx29 = fillCanvas(canvas29, url29);
+const ctx30 = fillCanvas(canvas30, url30);
+const ctx31 = fillCanvas(canvas31, url31);
+const ctx32 = fillCanvas(canvas32, url32);
+const ctx33 = fillCanvas(canvas33, url33);
+const ctx34 = fillCanvas(canvas34, url34);
+const ctx35 = fillCanvas(canvas35, url35);
