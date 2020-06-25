@@ -243,6 +243,14 @@ letter-spacing: 17px
 	padding-top: 130px;
 }
 
+.projecttitle {
+	font-size: 48px;
+	text-align: center;
+	color: #8a1f1f;
+	font-style: bold;
+
+}
+
 h3 {
 	font-family: 'Inconsolata', monospace;
 	font-size: 24px;
@@ -278,16 +286,17 @@ div.neben {
 
   canvas {
     position: absolute;
-    top: 200px;
+    top: 750px;
     left: 70px;
 		right: 70px;
     transition: opacity 2s;
 }
 
 div.bookbox {
-	font-size: 18px;
+	font-size: 26px;
 	color: black;
-	padding: 0 70px;
+	padding: 0 200px;
+	text-align: center;
 
 	}
 	div.rowsame{
@@ -317,7 +326,7 @@ padding-bottom:56.25%;
 position:relative;
 height:0;
 flex-basis: 100%;
-margin-left: 70px;
+margin-left: 200px;
 display: flex;
 }
 .video-responsive iframe{

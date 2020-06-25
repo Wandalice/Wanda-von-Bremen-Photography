@@ -1,4 +1,4 @@
-var url = './book/start.jpg'
+var url = './book/start1.jpg'
 var url3 = './book/canvas_2.jpg'
 var url4 = './book/canvas3.jpg'
 var url5 = './book/canvas4.jpg'
@@ -85,7 +85,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
   const img = new Image();
   img.src = currentUrl;
   img.onload = function() {
-    var width = Math.min(1200, img.width);
+    var width = Math.min(1100, img.width);
     var height = img.height * (width / img.width);
 
     currentCanvas.width = width;
@@ -108,7 +108,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
     }
 
     const pctVisible = ((100 * ct) / area).toFixed(2);
-    let targetPct = 90
+    let targetPct = 80
 
     if (currentCanvas===canvas || currentCanvas===canvas3) {
       targetPct = 50
