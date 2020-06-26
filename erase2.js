@@ -185,3 +185,9 @@ const ctx33 = fillCanvas(canvas33, url33);
 const ctx34 = fillCanvas(canvas34, url34);
 const ctx35 = fillCanvas(canvas35, url35);
 const ctx36 = fillCanvas(canvas36, url36);
+
+setTimeout(function () {
+  document.querySelectorAll('canvas').forEach((canvas) => {
+canvas.style.opacity=1
+  })
+}, 3000 );

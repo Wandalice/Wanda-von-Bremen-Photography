@@ -72,10 +72,14 @@ nav a {
 section {
 	overflow: hidden;
 	padding: 0 0 0 0;
-	margin: -50 auto 10px auto;
-	width: 300px;
+	margin-left: 40px;
+	margin-right: 40px;
+
 }
 
+section.row {
+		width: calc(100% - 80px);
+}
 nav a:hover {
 	color: white;
 	font-family: 'Inconsolata', monospace;
@@ -201,6 +205,9 @@ letter-spacing: 17px
 	width: calc(8.3333333333%*12);
 }
 
+.profil {
+	width: 100%;
+}
 .row {
 	display: flex;
 	flex-direction: row;
@@ -273,23 +280,23 @@ h2 {
 	top: 0;
 	background-size: cover;
 }
-.links{
-	margin-left: 40px;
-}
+
 
 
 div.neben {
-	height: 830px;
+	margin-top: 30px;
+	height: 687px;
+	position: relative;
 
 
 }
 
   canvas {
     position: absolute;
-    top: 750px;
-    left: 70px;
-		right: 70px;
+    top: 0px;
+    left: calc(50% - 550px);
     transition: opacity 2s;
+		opacity: 0 ;
 }
 
 div.bookbox {
@@ -326,14 +333,12 @@ padding-bottom:56.25%;
 position:relative;
 height:0;
 flex-basis: 100%;
-margin-left: 200px;
 display: flex;
+
 }
 .video-responsive iframe{
-left:0px;
 top:0px;
-height:50%;
-width:50%;
+left: calc(50% - 550px);
 position:absolute;
 }
 .mobile {
