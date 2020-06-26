@@ -300,6 +300,7 @@ div.neben {
 }
 
 div.bookbox {
+	margin-bottom: 30px;
 	font-size: 26px;
 	color: black;
 	padding: 0 200px;
@@ -338,7 +339,7 @@ display: flex;
 }
 .video-responsive iframe{
 top:0px;
-left: calc(50% - 550px);
+left: calc(50% - 450px);
 position:absolute;
 }
 .mobile {
