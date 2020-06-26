@@ -36,7 +36,7 @@ div.slideout {
 	right: -300px;
 	width: 300px;
 	height: 100%;
-	background-color: #8ba5a0;
+	background-color: #dfbd40;
 	transition: right 1s;
 	z-index: 500;
 }
@@ -97,6 +97,7 @@ nav a:hover {
 	background-color: white;
 	left: 30px;
 	padding: 60px;
+	
 }
 
 .untertitle {
@@ -105,7 +106,7 @@ font-family: 'Inconsolata', monospace;
 font-weight: 200;
 color: black;
 padding-bottom: 10px;
-letter-spacing: 17px
+letter-spacing: 17px;
 
 
 }
