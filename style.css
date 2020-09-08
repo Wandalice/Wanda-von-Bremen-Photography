@@ -7,6 +7,8 @@ body {
 	right: 15px;
 	overflow-x:hidden;
 	margin: 0px;
+
+
 }
 
 .home-gallery img {
@@ -41,7 +43,7 @@ div.slideout {
 	z-index: 500;
 }
 
-div.hamburger:hover div.slideout {
+div.hamburger:hover div.slideout, div.hamburger:active div.slideout {
 	right: 0;
 }
 
@@ -97,7 +99,7 @@ nav a:hover {
 	background-color: white;
 	left: 30px;
 	padding: 60px;
-	
+
 }
 
 .untertitle {
