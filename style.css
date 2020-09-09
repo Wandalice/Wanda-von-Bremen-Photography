@@ -89,6 +89,7 @@ nav a:hover {
 }
 
 .title {
+ box-sizing: content-box;
 	font-size: 35px;
 	font-family: 'Inconsolata', monospace;
 	font-weight: 400;
@@ -358,4 +359,16 @@ position:absolute;
   .mobile{
     display: block
   }
+	.moschrift {
+		padding-top: 10px;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 120%;
+	}
+	.moschriftc {
+		padding-top: 10px;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 120%;
+			text-align: center;
 }
