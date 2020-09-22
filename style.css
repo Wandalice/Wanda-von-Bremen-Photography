@@ -1,4 +1,6 @@
 @import url("style.css");
+
+html {overflow-x: hidden;}
 body {
 	font-family: 'Nunito Sans', sans-serif;
 	background-color: #ffffff;
@@ -7,6 +9,8 @@ body {
 	right: 15px;
 	overflow-x:hidden;
 	margin: 0px;
+	position: relative;
+	width: 100%;
 
 
 }
@@ -371,4 +375,15 @@ position:absolute;
 		font-weight: 500;
 		line-height: 120%;
 			text-align: center;
+}
+.video-responsive iframe{
+	position: relative;
+left: 0;
+top: 0;
+
+}
+canvas {
+	left:0;
+}
+
 }
