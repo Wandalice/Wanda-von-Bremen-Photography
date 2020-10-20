@@ -10,7 +10,7 @@ const fillCanvas = (currentCanvas, currentUrl) => {
   const img = new Image();
   img.src = currentUrl;
   img.onload = function() {
-    var width = Math.min(1100, img.width);
+    var width = Math.min(300, img.width);
     var height = img.height * (width / img.width);
 
     currentCanvas.width = width;
