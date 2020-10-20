@@ -380,8 +380,13 @@ position:absolute;
 	position: relative;
 left: 0;
 top: 0;
-
 }
+div.interactivewrapper {
+	height: 200px;
+	width: 300px;
+margin: 30px auto 0 ;
+}
+
 canvas {
 	left:0;
 }
