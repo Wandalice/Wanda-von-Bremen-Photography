@@ -174,21 +174,22 @@ h2 {
 }
 
 .artboard {
+}
+
+.flow {
 	position: fixed;
 	left: 100px;
 	right: 0;
 	bottom: 0;
 	top: 100vh;
-}
+	animation-name: flowing;
+	animation-timing-function: ease;
 
-.flow {
-animation-name: flowing;
-animation-timing-function: ease;
 }
 
 @keyframes flowing {
 	from  {left:100px; top:100vh;}
-  to {left:130px; top:-60vh;}
+  to {left:270px; top:-60vh;}
 
 }
 

@@ -1,23 +1,52 @@
 
 
 // sth spawn images below the pages
+const startTime = new Date()
+
 const spawn = ( ) => {
-  const src = "wanda/we1.jpg"
-  const src1 = "wanda/we2.jpg"
+
+  const randomimgnumber =  Math.floor(Math.random() * 3) + 1
+
+  const src = `wanda/we${randomimgnumber}.jpg`
   var picture = document.createElement("img");
-  var picture1 = document.createElement("img");
     picture.src = src
-    picture1.src = src1
+    picture.className = "flow"
     picture.style.width = "30%"
-    picture1.style.width = "20%"
+    const currentTime = new Date()
+    const timePassed = currentTime-startTime
+    const delayString = `${timePassed}ms`
+      picture.style["animation-delay"] = delayString
   document.querySelector(".artboard").appendChild(picture)
-  document.querySelector(".artboard").appendChild(picture1)
 
   document.querySelector('.flow').style["animation-duration"] = "8s"
+
+  setTimeout(() => {
+    spawn()
+  }, 500)
+
+
 
 
 }
 spawn()
+
+
+
+
+
+
+
+
+
+
+
+//given a path
+// all start at bottom- css animation randomly x,y
+
+// more coplicated: every tick random function update position
+
+//function which checks if pic are off page -- delete
+
 
 
 
@@ -34,10 +63,3 @@ spawn()
 
   //picture.style.flow = document.getElementById(".flow");
   //var animation = document.createElement(".flow")
-
-//given a path
-// all start at bottom- css animation randomly x,y
-
-// more coplicated: every tick random function update position
-
-//function which checks if pic are off page -- delete
