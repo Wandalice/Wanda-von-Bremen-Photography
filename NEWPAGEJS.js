@@ -5,25 +5,35 @@ const startTime = new Date()
 
 const spawn = ( ) => {
 
+
   const randomimgnumber =  Math.floor(Math.random() * 3) + 1
+  const randomAnimationDuration = Math.floor(Math.random() * 7000) + 1000
+  const randomxValue = Math.floor(Math.random() * 1000) - 500
+  const randomWidth = (Math.random() * 0.4) + 0.1
 
   const src = `wanda/we${randomimgnumber}.jpg`
   var picture = document.createElement("img");
     picture.src = src
     picture.className = "flow"
-    picture.style.width = "30%"
+    picture.style.transform = `translateX(${randomxValue}px) scale(${randomWidth},${randomWidth})`
+
     const currentTime = new Date()
     const timePassed = currentTime-startTime
     const delayString = `${timePassed}ms`
-      picture.style["animation-delay"] = delayString
+
+      picture.style["animation-duration"] = `${randomAnimationDuration}ms`
   document.querySelector(".artboard").appendChild(picture)
 
-  document.querySelector('.flow').style["animation-duration"] = "8s"
+
+
 
   setTimeout(() => {
     spawn()
   }, 500)
 
+  setTimeout(() => {
+    picture.parentNode.removeChild(picture);
+  }, 8000)
 
 
 
