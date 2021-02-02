@@ -3,23 +3,33 @@
 // sth spawn images below the pages
 const startTime = new Date()
 
+const textstrings = ["hello text", "this is s text", "another text"]
+
+
 const spawn = ( ) => {
 
 
-  const randomimgnumber =  Math.floor(Math.random() * 3) + 1
-  const randomAnimationNumber =  Math.floor(Math.random() * 3) + 1
+  const randomimgnumber =  Math.floor(Math.random() * 30) + 1
+  const randomAnimationNumber =  Math.floor(Math.random() * 4) + 1
+  const randomtextAnimationNumber =  Math.floor(Math.random() * 5) + 3
   const randomAnimationDuration = Math.floor(Math.random() * 5000) + 18000
+  const randomtextAnimationDuration = Math.floor(Math.random() * 4000) + 16000
   const randomxValue = Math.floor(Math.random() * 900) - 500
-  const randomWidth = (Math.random() * 0.1) + 0.2
-  //const randomyValue = Math.floor(Math.random() * 900) - 500
-  //const randompath = (x, y, 10 * Math.random(), 0, Math.PI * Math.random());)
+  const randomWidth = (Math.random() * 0.1) + 0.3
 
-  const src = `wanda/we${randomimgnumber}.jpg`
+
+  const src = `book/canvas${randomimgnumber}.jpg`
   const randomAnimation = `flowing${randomAnimationNumber}`
+    const randomtextAnimation = `flowing${randomtextAnimationNumber}`
   var picture = document.createElement("img");
     picture.src = src
     picture.className = "flow"
     picture.style.transform = `translateX(${randomxValue}px) scale(${randomWidth},${randomWidth})`
+
+    var text = document.createElement("p")
+    const textstring = textstrings[ Math.floor(Math.random() * 3) ]
+      text.innerHTML= textstring
+      text.className = "flow"
 
 
 
@@ -29,30 +39,64 @@ const spawn = ( ) => {
   //})
 
     picture.addEventListener("mouseover", () => {
-      picture.style.zIndex = 10
+      picture.style.zIndex = "10"
+      //picture.style["animation-duration"] = "4000ms"
     })
     picture.addEventListener("mouseout", () => {
-      picture.style.zIndex = 1
+      picture.style.zIndex = "1"
+      //picture.style["animation-duration"] = `${randomAnimationDuration}ms`
     })
 
+    picture.addEventListener("click", () => {
+      if(picture.big) {
+        picture.style.transform = `translateX(${randomxValue}px) scale(${randomWidth},${randomWidth})`
+        picture.big = false
+      } else {
+          picture.style.transform = `translateX(${randomxValue}px) scale(0.6, 0.6)`
+          picture.big = true
+      }
+
+    })
 
       picture.style["animation-name"] = randomAnimation
       picture.style["animation-duration"] = `${randomAnimationDuration}ms`
+      text.style["animation-name"] = randomtextAnimation
+      text.style["animation-duration"] = `${randomtextAnimationDuration}ms`
   document.querySelector(".artboard").appendChild(picture)
+  document.querySelector(".artboard").appendChild(text)
+
+
+
+//
+
+  //document.querySelector(".artboard").addEventListener("mouseover", (event) => {
+  //event.target.style["animation-duration"] = 4000
+  //})
+  //document.querySelector(".artboard").addEventListener("mouseout", (event) => {
+    //event.target.style["animation-duration"] = `${randomAnimationDuration}ms`
+    //})
+
+
+    //documnet.queryselector(".artboard").addEventListener("click", (event) => {
+      //event.target.style.transform = 0.5
+    //})
 
 
 
 
   setTimeout(() => {
     spawn()
-  }, 1500)
+  }, 2500)
 
   setTimeout(() => {
     picture.parentNode.removeChild(picture);
+    text.parentNode.removeChild(text);
   }, randomAnimationDuration)
 
 }
 spawn()
+
+
 
 
 // how to once hover in y comes to front,
