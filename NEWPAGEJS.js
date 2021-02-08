@@ -3,13 +3,15 @@
 // sth spawn images below the pages
 const startTime = new Date()
 
-const textstrings = ["hello text", "this is s text", "another text"]
+const textstrings = [["Click on the pictures to see them bigger...","small-title"],
+ ["This a very long text to see how things go", "big-title"],
+  ["another text","medium-title"]]
 
 
 const spawn = ( ) => {
 
 
-  const randomimgnumber =  Math.floor(Math.random() * 30) + 1
+  const randomimgnumber =  Math.floor(Math.random() * 35) + 1
   const randomAnimationNumber =  Math.floor(Math.random() * 4) + 1
   const randomtextAnimationNumber =  Math.floor(Math.random() * 5) + 3
   const randomAnimationDuration = Math.floor(Math.random() * 5000) + 18000
@@ -27,9 +29,17 @@ const spawn = ( ) => {
     picture.style.transform = `translateX(${randomxValue}px) scale(${randomWidth},${randomWidth})`
 
     var text = document.createElement("p")
-    const textstring = textstrings[ Math.floor(Math.random() * 3) ]
-      text.innerHTML= textstring
-      text.className = "flow"
+    const title = textstrings[ Math.floor(Math.random() * 3) ]
+    const textstring = title[0]
+    const textclass = title[1]
+      text.innerHTML = textstring
+      text.className = "flow flowtext"+" "+textclass
+
+
+
+
+
+
 
 
 

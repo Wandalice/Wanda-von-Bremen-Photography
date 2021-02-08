@@ -7,6 +7,7 @@ body {
 	color: #000000;
 	left: 15px;
 	right: 15px;
+	height: 100vh;
 	overflow-x:hidden;
 	margin: 0px;
 	position: relative;
@@ -211,9 +212,37 @@ h2 {
 }
 
 
+.textflowbox {
+	margin: 30px;
+   background: yellow;
+   border: 1px solid black;
+   outline: 1px solid red;
+   outline-offset: 15px;
+}
+.flowtext {
+	color: #24615A;
+	font-size: 25px;
+	font-family: Harmattan;
+	text-shadow: 0 3px 2px grey;
+	letter-spacing: Spacing: 3px;
+	overflow: normal;
+	width: 300px;
+	height: 10px;
+	overflow: visible;
+	line-height: 70%;
+	font-weight: 100;
+	background-color: pink;
+}
 
+.big-title {
+	font-size: 70px !important;
+}
 
-
+.boxx {
+	height: 30px;
+	width: 60px;
+	background-color: red;
+}
 
 
 
