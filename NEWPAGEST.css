@@ -242,6 +242,17 @@ h2 {
 	height: 30px;
 	width: 60px;
 	background-color: red;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.boxx2 {
+	height: 100px;
+	width: 80px;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 
