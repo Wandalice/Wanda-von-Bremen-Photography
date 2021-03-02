@@ -248,9 +248,10 @@ h2 {
 }
 .boxx2 {
 	height: 100px;
-	width: 80px;
+	width: 170px;
 	background-color: red;
 	position: absolute;
+	object-fit: contain;
 	left: 0;
 	top: 0;
 }

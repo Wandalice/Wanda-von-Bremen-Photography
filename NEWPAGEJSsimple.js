@@ -8,25 +8,26 @@
 let secondsPassed;
 let oldTimeStamp;
 let fps;
-let boxposition = {x: 0, y: 0}
-let box2position = {x: 0, y: 0}
+
+const randomimgnumber =  Math.floor(Math.random() * 35) + 1
+const box = document.querySelector(".boxx")
+box.style.backgroundImage = `url('book/canvas${randomimgnumber}.jpg')`
+
+
+const randomimgnumber2 =  Math.floor(Math.random() * 35) + 1
+const box2 = document.querySelector(".boxx2")
+box2.style.backgroundImage = `url('book/canvas${randomimgnumber2}.jpg')`
+
+
+
+let boxposition = {x: 40, y: 800}
+let box2position = {x: 800, y: 700}
 let scale = [2, 0.1, 0.5, 7, 0.2]
 let scale2 = {value: 0.3}
 let box2scale2 = {value: 0.9}
 let color = ['red', 'green', 'pink', 'black', 'blue', 'orange']
 
 
-
-
-
-//function randomWidth(items){
-//return items[Math.floor(Math.random() * items.length)]}
-  //var items = [245, 2, 3, 4, 9]
-
-
-  //var items =[ 0.01, 3, 0.02, 1]
-
-  //items.forEach((number) => {})
 
     window.onload = init;
 
@@ -41,7 +42,7 @@ let color = ['red', 'green', 'pink', 'black', 'blue', 'orange']
 
         const deltatime = timeStamp - oldTimeStamp
         // Calculate the number of seconds passed since the last frame
-        secondsPassed = (deltatime) / 1000;
+        secondsPassed = (deltatime) / 100;
         oldTimeStamp = timeStamp;
 
         // Calculate fps
@@ -58,11 +59,17 @@ let color = ['red', 'green', 'pink', 'black', 'blue', 'orange']
 
     function draw(deltatime){
 
+          const boxcontainer = ["box1", "box2",]
+          if(1000) {
+            const newbox = document.querySelector(".boxx")
+          }
+        boxcontainer.push("newbox")
 
 
 
-      const box = document.querySelector(".boxx")
-      const box2 = document.querySelector(".boxx2")
+      //const box = document.querySelector(".boxx")
+      //const box2 = document.querySelector(".boxx2")
+
       //const scaleoffset = (Math.random() * 0.2) -0.1
       const numberscale = Math.floor(scale.length * Math.random())
       const newScale = scale[numberscale]
@@ -82,27 +89,20 @@ let color = ['red', 'green', 'pink', 'black', 'blue', 'orange']
       const random2O = Math.random()
 
       boxposition.x = boxposition.x+(Math.random() * 0.2)
-      boxposition.y = boxposition.y+(Math.random() * 0.1)
+      boxposition.y = boxposition.y+(Math.random() * -0.5)
 
       box2position.x = box2position.x+(Math.random() * 1)
-      box2position.y = box2position.y+(Math.random() * 2)
-
-
-      //scale2.value = scale2.value+scaleoffset
+      box2position.y = box2position.y+(Math.random() * -1)
 
 
 
 
-
-      //let randomColor = Math.random() > 0.5? '#ff8081' : '#0099b0'
-      //box.style.backgroundColor = "randomColor"
-      //box.fill(100, 50, 200, 175)
 
       box.style.transform = `translateX(${boxposition.x}px) translateY(${boxposition.y}px) scale(${newScale})`
-      box.style.backgroundColor = `rgba(${randomr},${randomg},${randomb},${randomO})`
+      //box.style.backgroundColor = `rgba(${randomr},${randomg},${randomb},${randomO})`
 
       box2.style.transform = `translateX(${box2position.x}px) translateY(${box2position.y}px) scale(${newScale2})`
-      box2.style.backgroundColor = `rgba(${random2r},${random2g},${random2b},${random2O})`
+      //box2.style.backgroundColor = `rgba(${random2r},${random2g},${random2b},${random2O})`
       console.log(`translateX(${box2position.x}px) translateY(${box2position.y}px) scale(${newScale2})`)
 
     }
