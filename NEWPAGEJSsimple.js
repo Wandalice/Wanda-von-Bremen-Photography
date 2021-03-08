@@ -17,6 +17,7 @@ box.style.backgroundImage = `url('book/canvas${randomimgnumber}.jpg')`
 const randomimgnumber2 =  Math.floor(Math.random() * 35) + 1
 const box2 = document.querySelector(".boxx2")
 box2.style.backgroundImage = `url('book/canvas${randomimgnumber2}.jpg')`
+box2.style.width = 200
 
 
 

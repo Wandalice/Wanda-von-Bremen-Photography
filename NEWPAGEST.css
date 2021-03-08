@@ -243,6 +243,7 @@ h2 {
 	width: 60px;
 	background-color: red;
 	position: absolute;
+	background-size: contain;
 	left: 0;
 	top: 0;
 }
@@ -250,6 +251,7 @@ h2 {
 	height: 100px;
 	width: 170px;
 	background-color: red;
+	background-size: contain;
 	position: absolute;
 	object-fit: contain;
 	left: 0;
