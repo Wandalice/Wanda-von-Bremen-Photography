@@ -3,6 +3,11 @@
 	width: 400px;
 	height: 300px;
 	background-size: contain;
-	background-image: url('book/canvas12.jpg');
 	background-repeat: no-repeat;
+}
+.image1 {
+	background-image: url('book/canvas12.jpg');
+}
+.image2 {
+	background-image: url('book/canvas17.jpg');
 }
