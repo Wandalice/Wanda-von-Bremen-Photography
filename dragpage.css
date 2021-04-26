@@ -9,5 +9,7 @@
 	background-image: url('book/canvas12.jpg');
 }
 .image2 {
+	top: 300px;
+	left: 500px;
 	background-image: url('book/canvas17.jpg');
 }

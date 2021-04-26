@@ -1,23 +1,29 @@
 //track mouse position when you click on image, track position when you move
-const state = {mousedown: false, x:0, y:0, imageX:0, imageY:0, target:null} // object assign with :
+const state = {mousedown: false, x:0, y:0, target:null} // object assign with :
 
 //acces object property wsdhjaf.sd
-
-document.querySelector(".floatingimage").addEventListener("mousedown", clickEvent => {
-  state.mousedown = true
-  state.x = clickEvent.pageX
-  state.y = clickEvent.pageY
-  state.target = clickEvent.target
+document.querySelectorAll(".floatingimage").forEach((element) => {
+  element.addEventListener("mousedown", clickEvent => {
+    state.mousedown = true
+    state.x = clickEvent.pageX
+    state.y = clickEvent.pageY
+    state.target = clickEvent.target
+  })
 })
+
 
 document.addEventListener("mouseup", clickEvent => {
   state.mousedown = false
+  if(!state.target) return null
   const currentMouseX = clickEvent.pageX
   const currentMouseY = clickEvent.pageY
   const deltaX = currentMouseX - state.x
   const deltaY = currentMouseY - state.y
-  state.imageX = state.imageX + deltaX
-  state.imageY = state.imageY + deltaY
+  console.log(state.target)
+  const oldimageX = parseInt(state.target.dataset.imageX) || 0
+  const oldimageY = parseInt(state.target.dataset.imageY) || 0
+  state.target.dataset.imageX = oldimageX + deltaX
+  state.target.dataset.imageY = oldimageY + deltaY
 })
 
 document.addEventListener("mousemove", followEvent => {
@@ -25,12 +31,16 @@ document.addEventListener("mousemove", followEvent => {
   const currentMouseY = followEvent.pageY
   const deltaX = currentMouseX - state.x
   const deltaY = currentMouseY - state.y
-  console.log(state.x, currentMouseX, deltaX)
+
+
 
   //const box = document.querySelector(".floatingimage")
 
   if(state.mousedown) {
-    state.target.style.transform = `translateX(${state.imageX + deltaX}px) translateY(${state.imageY + deltaY}px)`
+    const oldimageX = parseInt(state.target.dataset.imageX) || 0
+    const oldimageY = parseInt(state.target.dataset.imageY) || 0
+
+    state.target.style.transform = `translateX(${oldimageX + deltaX}px) translateY(${oldimageY + deltaY}px)`
   }
 })
 
@@ -39,7 +49,7 @@ document.addEventListener("mousemove", followEvent => {
 
 // diffrent imagex and Y for every image, nest things in my state
 //use event.taget to create diffrent names, or nest
-state[event.target.className] = {x: event.target.pageX}
+//state[event.target.className] = {x: event.target.pageX}
 
 
 
