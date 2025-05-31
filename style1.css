@@ -3,85 +3,81 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
   margin: 0;
   padding: 0;
 }
-
 img {
   display:flex;
-  width: 100%; }
-
+  width: 100%;
+}
 .hidden {
-  display: none; }
-
+  display: none;
+}
 .left {
-  float: left; }
-
+  float: left;
+}
 .right {
-  float: right; }
-
+  float: right;
+}
 .one {
-  width: 100%; }
-
+  width: 100%;
+}
 .one-two {
-  width: 50%; } {
-    .one-two {
-      width: 100%; } }
-
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .one-two {
+    width: 100%;
+  }
+}
 .full-page {
-  height: 100%; }
-
+  height: 100%;
+}
 .home-gallery {
   padding: 0 13px;
-  margin-top: 50px; }
+  margin-top: 50px;
+}
+.home-gallery figure {
+  padding-bottom: 85.6666%;
+  position:relative;
+}
+.home-gallery img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
 
-  .home-gallery figure {
-    padding-bottom: 85.6666%;
-    position:relative; }
-  .home-gallery img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%; }
+/* Mobile Gallery - standardmäßig versteckt */
+.mobile {
+  display: none;
+}
 
+/* Desktop Gallery - standardmäßig sichtbar */
+.desktop {
+  display: block;
+}
 
+/* Mobile Breakpoint - unter 768px */
+@media only screen and (max-width: 767px) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+}
 
-  /*@media (max-width: 780px) {
-    .home-gallery {
-      padding: 0 20px; } }
-  @media (max-width: 700px) {
-    .home-gallery {
-      margin-top: 64.5px; } }
-  @media (max-width: 540px) {
-    .home-gallery {
-      padding: 0 8px;
-      margin-top: 16px; } }
-  /*@media (max-width: 540px) */
-
-
-    /*.home-gallery:last-child {
-      padding: 0 80px;
-      margin-top: 0; } */
-
-/*.vertical-pos {
-  width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
-  padding: 0 20px; }
-  @media (max-width: 780px) {
-    .vertical-pos {
-      padding: 0 15px; } }
-  @media (max-width: 540px) {
-    .vertical-pos {
-      padding: 0 8px;
-      vertical-align: top; } }
-
-@media (max-width: 700px) and (orientation: landscape) {
-  .vertical-pos {
-    vertical-align: top; } } */
+/* Desktop Breakpoint - ab 768px */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}

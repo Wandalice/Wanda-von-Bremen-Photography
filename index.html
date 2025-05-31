@@ -5,11 +5,43 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style1.css">
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<link rel="stylesheet" href="override.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	 <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Glegoo&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+
+<style>
+/* ULTIMATE MOBILE/DESKTOP FIX */
+.mobile {
+  display: none !important;
+}
+
+.desktop {
+  display: block !important;
+}
+
+/* Mobile: unter 768px */
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+}
+
+/* Desktop: ab 768px */
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}
+</style>
 
 </head>
 <body ontouchstart="">

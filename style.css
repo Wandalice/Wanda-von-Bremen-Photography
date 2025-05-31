@@ -358,39 +358,46 @@ position:absolute;
 	display: none
 }
 
-	@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
   .desktop {
-  	display: none
+    display: none;
   }
-  .mobile{
-    display: block
+  .mobile {
+    display: block;
   }
-	.moschrift {
-		padding-top: 10px;
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 120%;
-	}
-	.moschriftc {
-		padding-top: 10px;
-		font-size: 17px;
-		font-weight: 500;
-		line-height: 120%;
-			text-align: center;
+  .moschrift {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .moschriftc {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+  }
+  .video-responsive iframe {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  div.interactivewrapper {
+    height: 200px;
+    width: 300px;
+    margin: 30px auto 0;
+  }
+  canvas {
+    left: 0;
+  }
 }
-.video-responsive iframe{
-	position: relative;
-left: 0;
-top: 0;
-}
-div.interactivewrapper {
-	height: 200px;
-	width: 300px;
-margin: 30px auto 0 ;
-}
-
-canvas {
-	left:0;
-}
-
+/* FORCE OVERRIDE - Desktop Gallery Rules */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
 }

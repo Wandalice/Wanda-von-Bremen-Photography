@@ -1,0 +1,60 @@
+/* ABSOLUTE OVERRIDE - HIGHEST PRIORITY */
+.mobile,
+div.mobile,
+section.mobile,
+.mobile section,
+.mobile div,
+.grid-preview,
+.spacetop {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.desktop,
+div.desktop,
+.desktop div,
+.desktop section,
+.home-gallery {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+}
+
+/* Mobile: unter 768px - Mobile Gallery zeigen */
+@media screen and (max-width: 767px) {
+  .mobile,
+  div.mobile,
+  section.mobile,
+  .mobile section,
+  .mobile div,
+  .grid-preview,
+  .spacetop {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: static !important;
+    left: auto !important;
+  }
+
+  .desktop,
+  div.desktop,
+  .desktop div,
+  .desktop section,
+  .home-gallery {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+  }
+}
