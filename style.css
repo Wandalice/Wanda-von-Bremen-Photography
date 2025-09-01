@@ -43,8 +43,8 @@ div.slideout {
 	right: -300px;
 	width: 300px;
 	height: 100%;
-	background-color: #dfbd40;
-	transition: right 1s;
+	background-color: #479bb8;
+	transition: right 0.5s;
 	z-index: 500;
 }
 
